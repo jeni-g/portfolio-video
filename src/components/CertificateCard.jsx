@@ -1,6 +1,6 @@
 import React from "react";
 
-const CertificateCard = ({ item, onView }) => {
+const CertificateCard = ({ item }) => {
   return (
     <div className="group w-[320px] h-[220px] shrink-0 [perspective:1200px] hover:scale-[1.02] transition-all duration-500">
 
@@ -154,22 +154,25 @@ group-hover:scale-110 ">
   <div className="border-t border-white/5 mb-4"></div>
 
   {/* Button */}
-  <button
-    onClick={() => onView(item.image)}
-    className="
-      w-full
-      h-9
-      rounded-full
-      bg-[#ff3131]
-hover:bg-[#ff4d4d]
-shadow-[0_10px_25px_rgba(255,59,59,0.35)]
-      transition-all
-      duration-300
-      hover:scale-[1.02]
-    "
-  >
-    View Certificate →
-  </button>
+<button
+  onClick={() => window.open(item.link, "_blank", "noopener,noreferrer")}
+  className="
+    w-full
+    h-9
+    rounded-full
+    bg-[#ff3131]
+    hover:bg-[#ff4d4d]
+    shadow-[0_10px_25px_rgba(255,59,59,0.35)]
+    transition-all
+    duration-300
+    hover:scale-[1.02]
+    text-white
+    text-sm
+    font-semibold
+  "
+>
+  View Certificate →
+</button>
 
 </div>
 

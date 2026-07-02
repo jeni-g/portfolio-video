@@ -1,12 +1,7 @@
 import React, { useState, useRef ,useEffect } from "react";
 import { motion } from "framer-motion";
 import CertificateCard from "./CertificateCard";
-import PythonFullStack from "../assets/certificates/pythonframework.jpeg";
-import FlutterSeminar from "../assets/certificates/seminarcertificate.jpeg";
-import AchievementCertificate from "../assets/certificates/acheivementcertificate.jpeg";
-import BugFinderCertificate from "../assets/certificates/bugfindercertificate.jpeg";
-import NovitechCertificate from "../assets/certificates/novitech.jpg";
-import GuviCertificate from "../assets/certificates/guvicertificate.jpg";
+
 
 const certificates = [
   {
@@ -16,7 +11,7 @@ const certificates = [
     title: "Python Full Stack Development",
     issuer: "TCEDS Computer Education",
     year: "2026",
-    image: PythonFullStack,
+    link: "https://drive.google.com/file/d/1wjmRXdZvHBdF4urUzlPZ5cNM0kCIuQK6/view?usp=sharing",
   },
   {
     id: 2,
@@ -25,7 +20,7 @@ const certificates = [
     title: "Flutter Cross Platform Development",
     issuer: "Dr. Sivanthi Aditanar College",
     year: "2026",
-    image: FlutterSeminar,
+    link:"https://drive.google.com/file/d/1HXL4wkrlLXPBj5X4TglykCYEO_Y62Cgt/view?usp=sharing",
   },
  {
     id: 3,
@@ -34,7 +29,7 @@ const certificates = [
     title: "Paper Presentation - First Prize",
     issuer: "Tech Vista National Symposium",
     year: "2026",
-    image: AchievementCertificate,
+    link:"https://drive.google.com/file/d/1gx7C2tmtOwgkPooaSFAm9OrisODF83iw/view?usp=sharing",
   },
 
   {
@@ -44,7 +39,7 @@ const certificates = [
     title: "Bug Finder Award",
     issuer: "Eson Infotech Pvt. Ltd.",
     year: "2026",
-    image: BugFinderCertificate,
+    link:"https://drive.google.com/file/d/16QORBHMFC-ch3Dzmod8QxmTyke7NAP3r/view?usp=sharing",
   },
 
   {
@@ -54,7 +49,7 @@ const certificates = [
     title: "30 Days Full Stack Development",
     issuer: "NoviTech R&D Pvt. Ltd.",
     year: "2024",
-    image: NovitechCertificate,
+    link:"https://drive.google.com/file/d/1I5QnhTHI097c7ToXVBJE0yuW3kYYISRE/view?usp=sharing",
   },
 
   {
@@ -64,12 +59,12 @@ const certificates = [
     title: "Building Applications using ChatGPT",
     issuer: "GUVI",
     year: "2024",
-    image: GuviCertificate,
+    link:"https://drive.google.com/file/d/1iApNrmAHjPkXfOIBRo2Kqazv348uUwfD/view?usp=sharing",
   },
 ];
 
 const Certifications = () => {
-    const [selectedCertificate, setSelectedCertificate] = useState(null);
+  
     const scrollRef = React.useRef(null);
    
     const [paused, setPaused] = useState(false);
@@ -93,19 +88,7 @@ useEffect(() => {
 
   return () => clearInterval(interval);
 }, [paused]);
-    useEffect(() => {
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") {
-      setSelectedCertificate(null);
-    }
-  };
 
-  window.addEventListener("keydown", handleKeyDown);
-
-  return () => {
-    window.removeEventListener("keydown", handleKeyDown);
-  };
-}, []);
 
   return (
     <section
@@ -270,7 +253,7 @@ Software Testing and Artificial Intelligence.
         <CertificateCard
           key={index}
           item={certificate}
-          onView={setSelectedCertificate}
+          
         />
       ))}
 
@@ -285,50 +268,11 @@ Software Testing and Artificial Intelligence.
       viewport={{ once: true }}
       className="mt-12 text-center text-gray-400 text-lg tracking-wide"
     >
-      Hover a card to flip and verify • Click to view the original certificate.
+    Hover to flip • View verified certificates securely via Google Drive.
     </motion.p>
 
       </div>
-   {selectedCertificate && (
-  <div
-    className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[9999] flex items-center justify-center p-6"
-    onClick={() => setSelectedCertificate(null)}
-  >
-    <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.35 }}
-      className="relative"
-      onClick={(e) => e.stopPropagation()}
-    >
-
-      {/* Download Button */}
-      <a
-        href={selectedCertificate}
-        download
-        className="absolute top-4 left-4 px-5 py-2 rounded-full bg-red-500 text-white font-semibold hover:bg-red-600 transition z-20"
-      >
-        ⬇ Download
-      </a>
-
-      {/* Close Button */}
-      <button
-        onClick={() => setSelectedCertificate(null)}
-        className="absolute top-4 right-4 w-12 h-12 rounded-full bg-white text-black text-3xl hover:bg-red-500 hover:text-white transition z-20"
-      >
-        ×
-      </button>
-
-      {/* Certificate */}
-      <img
-        src={selectedCertificate}
-        alt="Certificate"
-        className="max-h-[90vh] max-w-[90vw] object-contain rounded-2xl shadow-[0_25px_70px_rgba(0,0,0,0.6)]"
-      />
-
-    </motion.div>
-  </div>
-)}
+  
       
     </section>
   );

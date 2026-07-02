@@ -15,7 +15,7 @@ const INTERNSHIP = [
             "Bug Analysis",
             "QA Testing"
         ],
-        certificate: "/certificates/doozyinfocertificate.pdf",
+        certificate: "https://drive.google.com/file/d/16la2_Xucqi43ZUgI4BlzkuLCqhktnXpL/view?usp=sharing",
     },
 
     {
@@ -26,7 +26,7 @@ const INTERNSHIP = [
         description:
             "Developed and deployed a personal portfolio website and a mini e-commerce application (Pawfect Store). Gained hands-on experience in frontend development, responsive design, GitHub deployment, and full-stack web technologies.",
         tags: ["React", "HTML", "CSS", "GitHub"],
-        certificate: "/certificates/futureinternscertificate.pdf",
+        certificate: "https://drive.google.com/file/d/1Ps9zSJTeqA3oNXvqABbul_pfh_0zRFYO/view?usp=sharing",
     },
 ];
 
