@@ -6,7 +6,7 @@ The portfolio reflects my learning journey as a Computer Science Engineering gra
 
 ## Live Demo
 
-🔗 https://your-vercel-url.vercel.app
+🔗 https://jeni-portfolio-video.vercel.app/
 
 ## Tech Stack
 
