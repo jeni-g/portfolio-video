@@ -112,7 +112,7 @@ const Hero = () => {
           >
             {/* Primary Button */}
            <a
-  href="/resume.pdf"
+  href="https://drive.google.com/file/d/1-vqN4x-ld5l3dCZ00dbySSWJnZekxU-U/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   onClick={(e) => e.stopPropagation()}
