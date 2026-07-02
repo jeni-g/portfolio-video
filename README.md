@@ -1,16 +1,91 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website. It was built to present my projects, technical skills, internship experience, certifications, and resume in a clean and responsive interface.
 
-Currently, two official plugins are available:
+The portfolio reflects my learning journey as a Computer Science Engineering graduate and highlights the technologies I have worked with through academic and personal projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+🔗 https://your-vercel-url.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Framer Motion
+- AOS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Responsive design for desktop and mobile
+- Hero section with a custom video created using Google Flow
+- About Me section
+- Skills and technology stack
+- Project showcase
+- Internship experience
+- Certifications
+- Resume
+- Contact form using Web3Forms
+- Smooth animations and transitions
+
+## Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/jeni-g/portfolio-video.git
+```
+
+Navigate to the project directory
+
+```bash
+cd portfolio-video
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Create a production build
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── assets/
+├── components/
+├── App.jsx
+├── main.jsx
+└── index.css
+
+public/
+├── favicon.svg
+└── icons.svg
+```
+
+## Contact
+
+**Jeni G Hannah**
+
+- Email: jenihannah4@gmail.com
+- GitHub: https://github.com/jeni-g
+- LinkedIn: https://www.linkedin.com/in/jeni-g-hannah1110/
+
+---
+
+Thank you for taking the time to visit my portfolio and explore my work.
